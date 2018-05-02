@@ -1,0 +1,24 @@
+PODS:
+  - Kingfisher (4.7.0)
+  - Nimble (7.1.0)
+  - Quick (1.2.0)
+  - ReSwift (4.0.1)
+  - SKActivityIndicatorView (0.1.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 4.0)
+  - Nimble (~> 7.1.0)
+  - Quick (~> 1.2.0)
+  - ReSwift (~> 4.0.0)
+  - SKActivityIndicatorView (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  Nimble: 9c6651c3021af6de54c3ed90a4a0a87d548f7359
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  SKActivityIndicatorView: f46936f760d33eb8235333242269bf01cc9248ae
+
+PODFILE CHECKSUM: 7decc579cce4cb3a24e9ba70241e747487349d02
+
+COCOAPODS: 1.4.0
