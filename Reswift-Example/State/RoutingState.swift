@@ -11,7 +11,7 @@ import ReSwift
 struct RoutingState: StateType {
     var destination: RoutingDestination
     
-    init(destination: RoutingDestination = .dogsList) {
+    init(destination: RoutingDestination = .genialIdea) {
         self.destination = destination
     }
 }

@@ -10,6 +10,7 @@ import ReSwift
 
 func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(
-        routingState: routingReducer(action: action, state: state?.routingState)
+        routingState: routingReducer(action: action, state: state?.routingState),
+        ideaState: ideaReducer(action: action, state: state?.ideaState)
     )
 }

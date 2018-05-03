@@ -1,5 +1,5 @@
 //
-//  AppState.swift
+//  SetGenialIdeaAction.swift
 //  Reswift-Example
 //
 //  Created by Vinícius Leão Salmont on 02/05/18.
@@ -8,7 +8,6 @@
 
 import ReSwift
 
-struct AppState: StateType {
-    let routingState: RoutingState
-    let ideaState: IdeaState
+struct SetGenialIdeaAction: Action {
+    let idea: Idea
 }

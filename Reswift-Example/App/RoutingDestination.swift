@@ -9,5 +9,5 @@
 import Foundation
 
 enum RoutingDestination: String {
-    case dogsList = "DogsListViewController"
+    case genialIdea = "StartupIdeasViewController"
 }

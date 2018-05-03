@@ -19,6 +19,13 @@
 		23BBF100209A75DD009A6356 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF0FF209A75DD009A6356 /* AppReducer.swift */; };
 		23BBF102209A7607009A6356 /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF101209A7607009A6356 /* RoutingReducer.swift */; };
 		23BBF104209A766E009A6356 /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF103209A766E009A6356 /* RoutingAction.swift */; };
+		23BBF107209A7902009A6356 /* StartupIdeasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF106209A7902009A6356 /* StartupIdeasViewController.swift */; };
+		23BBF112209A7B1F009A6356 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF111209A7B1F009A6356 /* Idea.swift */; };
+		23BBF116209A898C009A6356 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF115209A898C009A6356 /* API.swift */; };
+		23BBF118209A8BB1009A6356 /* FetchIdeaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF117209A8BB1009A6356 /* FetchIdeaAction.swift */; };
+		23BBF11A209A8C72009A6356 /* SetGenialIdeaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF119209A8C72009A6356 /* SetGenialIdeaAction.swift */; };
+		23BBF11C209A8CC7009A6356 /* IdeaState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF11B209A8CC7009A6356 /* IdeaState.swift */; };
+		23BBF11E209A8D19009A6356 /* IdeaReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF11D209A8D19009A6356 /* IdeaReducer.swift */; };
 		3683513AE27DF4EC13195502 /* Pods_Reswift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DECBE4CEC52BB91909DF5B0 /* Pods_Reswift_Example.framework */; };
 		AD23DA12C7386F2E33E94394 /* Pods_Reswift_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96B523E4CFEF28069E47F0A /* Pods_Reswift_ExampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +58,13 @@
 		23BBF0FF209A75DD009A6356 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		23BBF101209A7607009A6356 /* RoutingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
 		23BBF103209A766E009A6356 /* RoutingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
+		23BBF106209A7902009A6356 /* StartupIdeasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupIdeasViewController.swift; sourceTree = "<group>"; };
+		23BBF111209A7B1F009A6356 /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
+		23BBF115209A898C009A6356 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		23BBF117209A8BB1009A6356 /* FetchIdeaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchIdeaAction.swift; sourceTree = "<group>"; };
+		23BBF119209A8C72009A6356 /* SetGenialIdeaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGenialIdeaAction.swift; sourceTree = "<group>"; };
+		23BBF11B209A8CC7009A6356 /* IdeaState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaState.swift; sourceTree = "<group>"; };
+		23BBF11D209A8D19009A6356 /* IdeaReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaReducer.swift; sourceTree = "<group>"; };
 		3E34B02166A31A51BCD4C456 /* Pods-Reswift-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reswift-ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reswift-ExampleTests/Pods-Reswift-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5588D7754581ECC7C5F02649 /* Pods-Reswift-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reswift-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reswift-Example/Pods-Reswift-Example.release.xcconfig"; sourceTree = "<group>"; };
 		9DECBE4CEC52BB91909DF5B0 /* Pods_Reswift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reswift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +137,7 @@
 			children = (
 				23BBF0EC209A7183009A6356 /* Actions */,
 				23BBF0ED209A72B0009A6356 /* App */,
-				23BBF0F7209A74CC009A6356 /* Controllers */,
+				23BBF0F7209A74CC009A6356 /* Feature */,
 				23BBF0F3209A74B3009A6356 /* Networking */,
 				23BBF0F4209A74BB009A6356 /* Reducers */,
 				23BBF0F5209A74C3009A6356 /* State */,
@@ -145,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				23BBF103209A766E009A6356 /* RoutingAction.swift */,
+				23BBF117209A8BB1009A6356 /* FetchIdeaAction.swift */,
+				23BBF119209A8C72009A6356 /* SetGenialIdeaAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -190,6 +206,7 @@
 		23BBF0F3209A74B3009A6356 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				23BBF115209A898C009A6356 /* API.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -199,6 +216,7 @@
 			children = (
 				23BBF0FF209A75DD009A6356 /* AppReducer.swift */,
 				23BBF101209A7607009A6356 /* RoutingReducer.swift */,
+				23BBF11D209A8D19009A6356 /* IdeaReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -208,15 +226,17 @@
 			children = (
 				23BBF0F9209A74ED009A6356 /* AppState.swift */,
 				23BBF0FB209A7512009A6356 /* RoutingState.swift */,
+				23BBF11B209A8CC7009A6356 /* IdeaState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
 		};
-		23BBF0F7209A74CC009A6356 /* Controllers */ = {
+		23BBF0F7209A74CC009A6356 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				23BBF105209A78EC009A6356 /* Startup Ideas */,
 			);
-			path = Controllers;
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		23BBF0F8209A74D5009A6356 /* Views */ = {
@@ -224,6 +244,31 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		23BBF105209A78EC009A6356 /* Startup Ideas */ = {
+			isa = PBXGroup;
+			children = (
+				23BBF110209A7B13009A6356 /* Model */,
+				23BBF10F209A7B04009A6356 /* Controller */,
+			);
+			path = "Startup Ideas";
+			sourceTree = "<group>";
+		};
+		23BBF10F209A7B04009A6356 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23BBF106209A7902009A6356 /* StartupIdeasViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23BBF110209A7B13009A6356 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23BBF111209A7B1F009A6356 /* Idea.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,12 +490,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BBF100209A75DD009A6356 /* AppReducer.swift in Sources */,
+				23BBF118209A8BB1009A6356 /* FetchIdeaAction.swift in Sources */,
 				23BBF0FA209A74EE009A6356 /* AppState.swift in Sources */,
+				23BBF112209A7B1F009A6356 /* Idea.swift in Sources */,
+				23BBF11A209A8C72009A6356 /* SetGenialIdeaAction.swift in Sources */,
 				23BBF0CD209A6F01009A6356 /* AppDelegate.swift in Sources */,
 				23BBF0FC209A7512009A6356 /* RoutingState.swift in Sources */,
 				23BBF104209A766E009A6356 /* RoutingAction.swift in Sources */,
+				23BBF11E209A8D19009A6356 /* IdeaReducer.swift in Sources */,
 				23BBF102209A7607009A6356 /* RoutingReducer.swift in Sources */,
 				23BBF0F2209A7345009A6356 /* AppRouter.swift in Sources */,
+				23BBF11C209A8CC7009A6356 /* IdeaState.swift in Sources */,
+				23BBF107209A7902009A6356 /* StartupIdeasViewController.swift in Sources */,
+				23BBF116209A898C009A6356 /* API.swift in Sources */,
 				23BBF0FE209A758B009A6356 /* RoutingDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,7 +674,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ml.salmont.Reswift-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -641,7 +693,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ml.salmont.Reswift-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
