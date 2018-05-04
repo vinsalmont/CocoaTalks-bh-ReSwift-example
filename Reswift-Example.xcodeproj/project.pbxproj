@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23606353209BDC4D004300EB /* CheckIfIsMillionaryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23606352209BDC4D004300EB /* CheckIfIsMillionaryAction.swift */; };
+		23606355209BDD2B004300EB /* SetIsAMillionaryIdeaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23606354209BDD2B004300EB /* SetIsAMillionaryIdeaAction.swift */; };
 		23BBF0CD209A6F01009A6356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBF0CC209A6F01009A6356 /* AppDelegate.swift */; };
 		23BBF0D2209A6F01009A6356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BBF0D0209A6F01009A6356 /* Main.storyboard */; };
 		23BBF0D4209A6F04009A6356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BBF0D3209A6F04009A6356 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		1F5B9CD4375A8CFB8BE32CD3 /* Pods-Reswift-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reswift-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reswift-Example/Pods-Reswift-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		23606352209BDC4D004300EB /* CheckIfIsMillionaryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfIsMillionaryAction.swift; sourceTree = "<group>"; };
+		23606354209BDD2B004300EB /* SetIsAMillionaryIdeaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetIsAMillionaryIdeaAction.swift; sourceTree = "<group>"; };
 		23BBF0C9209A6F01009A6356 /* Reswift-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reswift-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BBF0CC209A6F01009A6356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23BBF0D1209A6F01009A6356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				23BBF103209A766E009A6356 /* RoutingAction.swift */,
 				23BBF117209A8BB1009A6356 /* FetchIdeaAction.swift */,
 				23BBF119209A8C72009A6356 /* SetGenialIdeaAction.swift */,
+				23606352209BDC4D004300EB /* CheckIfIsMillionaryAction.swift */,
+				23606354209BDD2B004300EB /* SetIsAMillionaryIdeaAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -503,6 +509,8 @@
 				23BBF11C209A8CC7009A6356 /* IdeaState.swift in Sources */,
 				23BBF107209A7902009A6356 /* StartupIdeasViewController.swift in Sources */,
 				23BBF116209A898C009A6356 /* API.swift in Sources */,
+				23606355209BDD2B004300EB /* SetIsAMillionaryIdeaAction.swift in Sources */,
+				23606353209BDC4D004300EB /* CheckIfIsMillionaryAction.swift in Sources */,
 				23BBF0FE209A758B009A6356 /* RoutingDestination.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

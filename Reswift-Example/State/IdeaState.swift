@@ -11,4 +11,6 @@ import ReSwift
 struct IdeaState {
     var idea: Idea?
     var isLoading: Bool
+    var isMillionary: Bool?
+    var alreadyChecked: Bool = false
 }
