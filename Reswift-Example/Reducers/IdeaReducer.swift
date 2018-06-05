@@ -8,23 +8,20 @@
 
 import ReSwift
 
-func ideaReducer(action: Action, state: IdeaState?) -> IdeaState {
-    var newState = state ?? IdeaState(idea: nil, isLoading: false, isMillionary: nil, alreadyChecked: false)
+func ideaReducer(action: Action, state: Result<IdeaState>?) -> Result<IdeaState> {
     
     switch action {
     case _ as FetchIdeaAction:
-        newState = IdeaState(idea: state?.idea, isLoading: true, isMillionary: nil, alreadyChecked: false)
+        API.sharedInstance.loadMillionaryIdea { (idea) in
+            guard let idea = idea else { return }
+            store.dispatch(SetGenialIdeaAction(idea: idea))
+        }
     case let setGenialIdeaAction as SetGenialIdeaAction:
-        newState.idea = setGenialIdeaAction.idea
-        newState.isLoading = false
-    case _ as CheckIfIsMillionaryAction:
-        newState = IdeaState(idea: state?.idea, isLoading: true, isMillionary: nil, alreadyChecked: true)
-    case let setIsAMillionaryIdeaAction as SetIsAMillionaryIdeaAction:
-        newState.isMillionary = setIsAMillionaryIdeaAction.isAMillionaryIdea
-        newState.isLoading = false
+        return Result<IdeaState>.finished(IdeaState(idea: setGenialIdeaAction.idea))
+
     default:
         break
     }
     
-    return newState
+    return Result<IdeaState>.loading
 }

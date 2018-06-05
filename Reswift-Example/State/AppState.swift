@@ -9,6 +9,5 @@
 import ReSwift
 
 struct AppState: StateType {
-    let routingState: RoutingState
-    let ideaState: IdeaState
+    var ideaState: Result<IdeaState> = .loading
 }

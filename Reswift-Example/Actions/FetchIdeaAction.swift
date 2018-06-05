@@ -8,14 +8,4 @@
 
 import ReSwift
 
-func fetchMillionaryIdea(state: AppState, store: Store<AppState>) -> FetchIdeaAction {
-    
-    API.sharedInstance.loadMillionaryIdea { (idea) in
-        guard let idea = idea else { return }
-        store.dispatch(SetGenialIdeaAction(idea: idea))
-    }
-    
-    return FetchIdeaAction()
-}
-
 struct FetchIdeaAction: Action { }
